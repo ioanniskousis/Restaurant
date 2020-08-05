@@ -20,7 +20,7 @@ function renderChefs(content) {
 
   const caption = crel('div');
   caption.className = 'aboutItemCaption';
-  caption.innerHTML = 'Passiotate Chefs';
+  caption.innerHTML = 'Passionate Chefs';
   checfs.appendChild(caption);
 
   const chef1 = crel('div');

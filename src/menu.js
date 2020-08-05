@@ -1,11 +1,11 @@
 import { gel, crel } from './utils';
-
-function salads() {
-  const items = [];
-  items.push({ image: '', description: '', price: 20 });
-
-  return items;
-}
+import {
+  salads,
+  shellfish,
+  fish,
+  meat,
+  wine,
+} from './menuItems';
 
 function renderHeader(content, text) {
   const saladsHeader = crel('div');
@@ -17,6 +17,28 @@ function renderHeader(content, text) {
 function renderItem(content, item) {
   const menuItem = crel('div');
   menuItem.className = 'menuItem';
+
+  const itemImage = crel('div');
+  itemImage.className = 'itemImage';
+  itemImage.style.backgroundImage = 'url("../resources/images/'.concat(item.image).concat('")');
+  menuItem.appendChild(itemImage);
+
+  const itemText = crel('div');
+  itemText.className = 'itemText';
+  const itemName = crel('div');
+  itemName.className = 'itemName';
+  itemName.innerHTML = item.name;
+  itemText.appendChild(itemName);
+  const itemDescription = crel('div');
+  itemDescription.className = 'itemDescription';
+  itemDescription.innerHTML = item.description;
+  itemText.appendChild(itemDescription);
+  const itemPrice = crel('div');
+  itemPrice.className = 'itemPrice';
+  itemPrice.innerHTML = item.price;
+  itemText.appendChild(itemPrice);
+  menuItem.appendChild(itemText);
+
   content.appendChild(menuItem);
 }
 
@@ -26,56 +48,32 @@ function renderMenu() {
   renderHeader(content, 'Salads and Appetisers');
   const saladsItems = salads();
   for (let index = 0; index < saladsItems.length; index += 1) {
-    renderItem(saladsItems[index]);
-  }
-  
-  renderHeader(content, 'Shellfish');
-
-  for (let index = 0; index < 4; index += 1) {
-    const menuItem = crel('div');
-    menuItem.className = 'menuItem';
-    content.appendChild(menuItem);
+    renderItem(content, saladsItems[index]);
   }
 
-  const fishHeader = crel('div');
-  fishHeader.className = 'menuHeader';
-  fishHeader.innerHTML = 'Fresh Fish';
-  content.appendChild(fishHeader);
-
-  for (let index = 0; index < 4; index += 1) {
-    const menuItem = crel('div');
-    menuItem.className = 'menuItem';
-    content.appendChild(menuItem);
+  renderHeader(content, 'Shellfish - Lobster');
+  const shellfishItems = shellfish();
+  for (let index = 0; index < shellfishItems.length; index += 1) {
+    renderItem(content, shellfishItems[index]);
   }
 
-  const meatHeader = crel('div');
-  meatHeader.className = 'menuHeader';
-  meatHeader.innerHTML = 'Meat';
-  content.appendChild(meatHeader);
-
-  for (let index = 0; index < 4; index += 1) {
-    const menuItem = crel('div');
-    menuItem.className = 'menuItem';
-    content.appendChild(menuItem);
+  renderHeader(content, 'Fresh Fish');
+  const fishItems = fish();
+  for (let index = 0; index < fishItems.length; index += 1) {
+    renderItem(content, fishItems[index]);
   }
 
-  const wineHeader = crel('div');
-  wineHeader.className = 'menuHeader';
-  wineHeader.innerHTML = 'Wine';
-  content.appendChild(wineHeader);
-
-  for (let index = 0; index < 8; index += 1) {
-    menuItem = crel('div');
-    menuItem.className = 'menuItem';
-    content.appendChild(menuItem);
+  renderHeader(content, 'Meat');
+  const meatItems = meat();
+  for (let index = 0; index < meatItems.length; index += 1) {
+    renderItem(content, meatItems[index]);
   }
 
-  // for (let index = 0; index < 10; index += 1) {
-  //   menuItem = crel('div');
-  //   menuItem.className = 'menuItem';
-  //   content.appendChild(menuItem);
-  // }
-
+  renderHeader(content, 'Wine');
+  const wineItems = wine();
+  for (let index = 0; index < wineItems.length; index += 1) {
+    renderItem(content, wineItems[index]);
+  }
 }
 
 export default renderMenu;
