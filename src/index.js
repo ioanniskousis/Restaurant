@@ -1,11 +1,27 @@
-import renderHome from './home';
-import { renderMenu, selectMenu } from './menu';
+import renderAboutUs from './aboutUs';
+import renderMenu from './menu';
+import renderContact from './contact';
 
-function menuCallBack(tabIndex) {
-  // alert(tabIndex);
+import { renderNavigator, selectNavigatorItem } from './navigator';
+import { gel } from './utils';
+
+function navigatorCallBack(tabIndex) {
+  const content = gel('content');
+  content.innerHTML = '';
+  content.scrollTop = '0';
+
+  switch (tabIndex) {
+    case 1:
+      renderMenu();
+      break;
+    case 2:
+      renderContact();
+      break;
+    default:
+      renderAboutUs();
+      break;
+  }
 }
 
-renderMenu(menuCallBack);
-selectMenu(0);
-
-renderHome();
+renderNavigator(navigatorCallBack);
+selectNavigatorItem(0, navigatorCallBack);
