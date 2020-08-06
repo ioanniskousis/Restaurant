@@ -80,7 +80,7 @@ A restaurant's web page built with HTML5, CSS3 and JavaScript
     - Images are compiled using file-loader  
     - CSS is compiled using style-loader  
 
-  The mark-up file dist/index.html only contains a skeleton that is rendered with elements depending on which view is selected by the user between 3.
+  The mark-up file dist/index.html only contains a skeleton that is rendered with elements depending on which view is selected by the user between 3.  
     - About Us, rendered by aboutUs.js  
     - Menu, rendered by menu.js fed with data from menuItems.js  
     - Contact, rendered by contacts.js  
