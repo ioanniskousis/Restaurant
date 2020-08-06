@@ -212,6 +212,86 @@ main {
   background-repeat: no-repeat;
 }
 
+.salad1 {
+  background-image: url('../images/salad1.jpg');
+}
+
+.salad2 {
+  background-image: url('../images/salad2.jpg');
+}
+
+.salad3 {
+  background-image: url('../images/salad3.jpg');
+}
+
+.salad4 {
+  background-image: url('../images/salad4.jpg');
+}
+
+.shellfish1 {
+  background-image: url('../images/shellfish1.jpg');
+}
+
+.shellfish2 {
+  background-image: url('../images/shellfish2.jpg');
+}
+
+.shellfish3 {
+  background-image: url('../images/shellfish3.jpg');
+}
+
+.shellfish4 {
+  background-image: url('../images/shellfish4.jpg');
+}
+
+.fish1 {
+  background-image: url('../images/fish1.png');
+}
+
+.fish2 {
+  background-image: url('../images/fish2.jpg');
+}
+
+.fish3 {
+  background-image: url('../images/fish3.jpg');
+}
+
+.fish4 {
+  background-image: url('../images/fish4.jpeg');
+}
+
+.meat1 {
+  background-image: url('../images/meat1.jpg');
+}
+
+.meat2 {
+  background-image: url('../images/meat2.jpg');
+}
+
+.meat3 {
+  background-image: url('../images/meat3.jpg');
+}
+
+.meat4 {
+  background-image: url('../images/meat4.jpg');
+}
+
+.wine1 {
+  background-image: url('../images/wine1.jpg');
+}
+
+.wine2 {
+  background-image: url('../images/wine2.jpg');
+}
+
+.wine3 {
+  background-image: url('../images/wine3.jpg');
+}
+
+.wine4 {
+  background-image: url('../images/wine4.jpg');
+}
+
 .itemText {
   background-color: rgba(250, 250, 250, 0.8);
   height: 100%;
@@ -265,7 +345,7 @@ main {
   margin: 30px;
   padding: 10px;
   color: brown;
-  /* text-shadow: 0 0 6px rgba(100, 50, 10, 1); */
+  text-shadow: 0 0 8px rgba(255, 255, 255, 1);
 }
 
 .mapItem {
@@ -294,13 +374,11 @@ footer > img {
 }
 
 @media screen and (max-width: 768px) {
-
   .menuHeader {
     height: 7vw;
     font-size: 5vw;
     padding: 2vh 4vw;
   }
-  
 
   .itemName {
     font-size: 18px;
@@ -321,5 +399,11 @@ footer > img {
 
   .contactItem > h1 {
     margin: 15px 30px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .menuHeader {
+    font-size: 4vw;
   }
 }
