@@ -4,6 +4,7 @@ import renderContact from './contact';
 
 import { renderNavigator, selectNavigatorItem } from './navigator';
 import { gel } from './utils';
+import '../resources/stylesheets/style.css';
 
 function navigatorCallBack(tabIndex) {
   const content = gel('content');
