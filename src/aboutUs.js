@@ -1,9 +1,12 @@
 import { gel, crel } from './utils';
+import grabsImg from '../resources/images/grabs.jpg';
+import kitchenImg from '../resources/images/kitchen.jpg';
+import atmosphaireImg from '../resources/images/atmosphaire.jpg';
 
 function renderGrabs(content) {
   const grabs = crel('div');
   grabs.className = 'aboutItem';
-  grabs.style.backgroundImage = 'url("../resources/images/grabs.jpg")';
+  grabs.style.backgroundImage = 'url('.concat(grabsImg).concat(')');
 
   const caption = crel('div');
   caption.className = 'aboutItemCaption';
@@ -16,7 +19,7 @@ function renderGrabs(content) {
 function renderChefs(content) {
   const checfs = crel('div');
   checfs.className = 'aboutItem';
-  checfs.style.backgroundImage = 'url("../resources/images/kitchen.jpg")';
+  checfs.style.backgroundImage = 'url('.concat(kitchenImg).concat(')');
 
   const caption = crel('div');
   caption.className = 'aboutItemCaption';
@@ -45,7 +48,7 @@ function renderChefs(content) {
 function renderAtmosphaire(content) {
   const atmosphaire = crel('div');
   atmosphaire.className = 'aboutItem';
-  atmosphaire.style.backgroundImage = 'url("../resources/images/atmosphaire.jpg")';
+  atmosphaire.style.backgroundImage = 'url('.concat(atmosphaireImg).concat(')');
 
   const caption = crel('div');
   caption.className = 'aboutItemCaption';
