@@ -89,7 +89,7 @@ function fish() {
   });
 
   items.push({
-    image: 'fish4.jpeg',
+    image: 'fish4',
     name: 'Roasted Red Snapper',
     description: 'Pick your favorite flavor combination sauce - Asian, Mediterranean or Caribbean.',
     price: '40$',

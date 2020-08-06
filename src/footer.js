@@ -5,10 +5,7 @@ import instaImg from '../resources/images/instagram-24.png';
 import pinteImg from '../resources/images/pinterest-24.png';
 import googleImg from '../resources/images/google-plus-4-24.png';
 
-// const linkImage = crel('link');
-// linkImage.setAttribute('', '');
-
-// document.head.appendChild('');
+gel('header-caption').innerHTML = 'Sea Side Restaurant';
 
 const footer = gel('footer');
 

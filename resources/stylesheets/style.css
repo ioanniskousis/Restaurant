@@ -30,7 +30,7 @@ header {
   align-items: center;
 }
 
-.header-caption {
+#header-caption {
   color: white;
   font-size: 4vh;
 }
@@ -39,11 +39,9 @@ main {
   margin: 0 auto;
   height: calc(100vh - 10vh);
   width: 90%;
-  /* max-width: 1400px; */
   border-left: 0.8vw solid rgb(32, 128, 180);
   border-right: 0.8vw solid rgb(32, 128, 180);
   position: relative;
-  
 }
 
 #mainContent {
@@ -316,7 +314,7 @@ main {
 
 .itemDescription {
   padding: 6px 6vw;
-  height: calc( 100% - 70px);
+  height: calc(100% - 70px);
   overflow: scroll;
   border-bottom: 1px solid #ddd;
   color: rgb(10, 40, 120);
@@ -361,9 +359,6 @@ footer {
   color: white;
   font-size: x-small;
   white-space: nowrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 footer > img {
@@ -387,7 +382,7 @@ footer > img {
   }
 
   .itemDescription {
-    height: calc( 100% - 50px);
+    height: calc(100% - 50px);
     padding: 4px 2vw;
   }
 

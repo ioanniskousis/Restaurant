@@ -1,4 +1,4 @@
-import './skeleton';
+import './footer';
 import renderAboutUs from './aboutUs';
 import renderMenu from './menu';
 import renderContact from './contact';

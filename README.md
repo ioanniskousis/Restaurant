@@ -49,11 +49,11 @@ A restaurant's web page built with HTML5, CSS3 and JavaScript
 
 ## Application Screen Shots  
 
-<img src="resources/images/homepage.png" alt="the homepage">
+<img src="resources/images/about.png" alt="the about page">
 <hr />
-<img src="resources/images/player-settings.png" alt="player-settings">
+<img src="resources/images/menu.png" alt="the menu page">
 <hr />
-<img src="resources/images/winner.png" alt="winner">
+<img src="resources/images/contact.png" alt="the contact page">
 <hr />
 
 <!-- TABLE OF CONTENTS -->
@@ -80,23 +80,14 @@ A restaurant's web page built with HTML5, CSS3 and JavaScript
     - Images are compiled using file-loader
     - CSS is compiled using style-loader  
 
-  MVC principles are applied  
-    - the role model is played by 
-    - index.js plays the role of controller  
+  The mark-up file dist/index.html only contains a skeleton that is rendered with elements depending on which view is selected by the user between 3.
+    - About Us, rendered by aboutUs.js
+    - Menu, rendered by menu.js fed with data from menuItems.js
+    - Contact, rendered by contacts.js  
+  The page footer is rendered by the footer.js
+  The navigation division is rendered by navigator.js
 
-  Two main classes, Gameboard and Player, are used to manage game data. 
-
-  The Gameboard class holds an array of cells to keep track of the players' moves. The game data is persistently stored in localStorage and retrieved each time the page is loaded. It also holds pointers to its 2 players. After each player's move, it checks if the game is over and if there is a winner. 
-  In details, the cells array initially is [0, 0, 0, 0, 0, 0, 0, 0, 0]. Each time a player checks a cell the particular cell takes a value of 1 or 2. For example, after player1 checks cell[3] then the array is [0, 0, 0, 1, 0, 0, 0, 0, 0], and if player2 checks cell[5] then the array becomes [0, 0, 0, 1, 0, 2, 0, 0, 0]. When none of the items is 0 then the game is over. When there is a pattern denoting a row, column or diagonal then there is a winner.  
-
-  Two instances of the Player class hold information about the 2 players - their name and the image for their moves which is either an X-image or a Circle. Players' info is also stored in localStorage. The player's info can be edited using a settings view.  
-
-  There are 5 JavaScript files.  
-    - main.js         : Initializes objects and event handlers, and applies the game logic  
-    - game.js         : Implements the GameBoard class  
-    - player.js       : Implements the Player class  
-    - controlFlow.js  : Implements all handlers and rendering   
-    - utils.js        : Helper file for shorhand commands  
+  The navigation buttons are supplied a pointer to a callback function (the navigatorCallBack function) from the index.js and this is called when a button is clicked providing the index of the button as a parameter.  
 
 <hr/>
 
@@ -104,26 +95,13 @@ A restaurant's web page built with HTML5, CSS3 and JavaScript
 
 ## Application Instructions  
 
-  The game provides a grid of 3x3 cells.  
-  It is played by 2 players and each player has an image - either an x-image or a circle - that tries to fill a set of 3 images in either a row or a column or a diagonal. The first player who achieves this is the winner.  
-  The players decide who to play first and check the cell of their choice with their image in rotation.  
-
-  The game ends either when there is a winner or all cells are checked.  
-  When there is a winner, the other player is playing first in the next round.  
-  When there is no winner, the last player is playing first.  
-
-By clicking the restart button at the top-right the game is reset and the players are swapped. 
-
-Initially, the 2 players are named 'Player 1' and 'Player 2'. 
-Their name can be edited using the settings view which can be selected by clicking the settings button at the top-right. 
-They also can select check-image and image color between blue and red. 
-If the page closes before the end of the game, it is stored and can be continued at any time. 
+  Use the three buttons in the navigator at the top of the page to move between the About page, the Menu page, and the Contact page.  
 
 <hr/>
 
-## System Requierments
+## System Requirements
   - JavaScript Enabled
-  - You need to Disable Cross-Origin-Restrictions from your browser, if you want to open the index.html from your file system without using a server.  
+  - You need to Disable Cross-Origin-Restrictions from your browser if you want to open the index.html from your file system without using a server.  
 
 <hr/>
 
@@ -133,6 +111,7 @@ If the page closes before the end of the game, it is stored and can be continued
     https://github.com/ioanniskousis/Restaurant.git
     
     Use VSCode and Live Server to show index.html
+    Since webpack is used, run 'npm run build' on you terminal before opening
   ``` 
 <hr/>
 
