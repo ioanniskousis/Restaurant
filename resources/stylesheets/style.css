@@ -40,7 +40,7 @@ main {
   margin: 0 auto;
   height: calc(100vh - 90px);
   width: 90%;
-  max-width: 1400px;
+  /* max-width: 1400px; */
   border-left: 10px solid rgb(32, 128, 180);
   border-right: 10px solid rgb(32, 128, 180);
   position: relative;
