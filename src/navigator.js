@@ -1,9 +1,6 @@
 import { gel, crel } from './utils';
 
 function resetNavigator() {
-  gel('aboutUsNavigatorItem').style.marginTop = '0';
-  gel('menuNavigatorItem').style.marginTop = '0';
-  gel('contactNavigatorItem').style.marginTop = '0';
   gel('aboutUsNavigatorItem').className = 'navigateSelector';
   gel('menuNavigatorItem').className = 'navigateSelector';
   gel('contactNavigatorItem').className = 'navigateSelector';
@@ -12,7 +9,6 @@ function resetNavigator() {
 function selectNavigatorItem(index, navigatorCallBack) {
   resetNavigator();
   const navigatorItems = ['aboutUsNavigatorItem', 'menuNavigatorItem', 'contactNavigatorItem'];
-  gel(navigatorItems[index]).style.marginTop = '20px';
   gel(navigatorItems[index]).className = 'navigateSelector selectedNavigator';
   navigatorCallBack(index);
 }

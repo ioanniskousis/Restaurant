@@ -43,7 +43,7 @@
   </p>
 </p>
 
-The traditional table game tic-tac-toe built with HTML5, CSS3 and JavaScript
+A restaurant's web page built with HTML5, CSS3 and JavaScript
 
 <hr />
 
@@ -74,6 +74,16 @@ The traditional table game tic-tac-toe built with HTML5, CSS3 and JavaScript
 ## About The Project  
 
   The project is implemented using an HTML page - the index.html. 
+  Webpack is used having configured as follows
+    - entry  : /src/index.js  
+    - output : dist/main.js  
+    - Images are compiled using file-loader
+    - CSS is compiled using style-loader  
+
+  MVC principles are applied  
+    - the role model is played by 
+    - index.js plays the role of controller  
+
   Two main classes, Gameboard and Player, are used to manage game data. 
 
   The Gameboard class holds an array of cells to keep track of the players' moves. The game data is persistently stored in localStorage and retrieved each time the page is loaded. It also holds pointers to its 2 players. After each player's move, it checks if the game is over and if there is a winner. 
