@@ -128,7 +128,7 @@ If the page closes before the end of the game, it is stored and can be continued
 
 ## Live Version
 
-  [Tic-Tac-Toe](https://ioanniskousis.github.io/Restaurant/)
+  [Restaurant Page](https://ioanniskousis.github.io/Restaurant/)
 
 <hr/>
 
