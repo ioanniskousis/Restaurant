@@ -239,7 +239,7 @@ main {
 }
 
 .contactItem {
-  background-color: rgba(255, 225550, 255, 0.3);
+  background-color: rgba(255, 225550, 255, 0.7);
   margin: 10px 20px;
   width: calc(100% - 40px);
   height: 500px;
@@ -272,6 +272,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer > img {
+  width: 16px;
+  height: 16px;
+  /* border-radius: 50%; */
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+footer > img:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 @media screen and (max-width: 600px) {

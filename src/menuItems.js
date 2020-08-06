@@ -14,12 +14,14 @@ function salads() {
     description: 'Sushi rice is seasoned with rice vinegar, sugar, and a bit of salt. The rice will taste odd by itself, but trust us, the rice needs to be seasoned this way in order for the sushi to taste right.',
     price: '20$',
   });
+
   items.push({
     image: 'salad3.jpg',
     name: 'Overnight Oats',
     description: 'Overnight Oats are a simple and healthy breakfast that’s conveniently made ahead of time, and the flavor combinations are endless',
     price: '20$',
   });
+
   items.push({
     image: 'salad4.jpg',
     name: 'Ahi Tuna',
@@ -38,18 +40,21 @@ function shellfish() {
     description: 'This is loosely based on a recipe in Alan Davidson’s book ‘North Atlantic Seafood’. His version doesn’t have cream in it.',
     price: '30$',
   });
+
   items.push({
     image: 'shellfish2.jpg',
     name: 'Shrimp Couscous',
     description: 'Shrimp and tomatoes are tossed with couscous and feta cheese, then dressed in a garlic vinaigrette. Always a hit, and never goes to waste.',
     price: '40$',
   });
+
   items.push({
     image: 'shellfish3.jpg',
     name: 'Lobster Tail',
     description: 'Lobster is regarded as the most elegant, high-end type of seafood The tail, or abdomen, is the prized section due to its abundance of meat, and when dipped in rich melted butter is a blissful feast.',
     price: '70$',
   });
+
   items.push({
     image: 'shellfish4.jpg',
     name: 'Dungeness Crab',
@@ -68,18 +73,21 @@ function fish() {
     description: 'Roasted on charcoal, poured with lemon sauce, basil, origan',
     price: '40$',
   });
+
   items.push({
     image: 'fish2.jpg',
     name: 'Perch fillets',
     description: 'A light and fresh dinner. Grilling the lemons leads to bright flavors that complement any firm white fish.',
     price: '40$',
   });
+
   items.push({
     image: 'fish3.jpg',
     name: 'Pan-Seared Salmon',
     description: 'This is one of chef\'s favorite recipe. The creamy dill sauce with cucumber tastes light and fresh.',
     price: '50$',
   });
+
   items.push({
     image: 'fish4.jpeg',
     name: 'Roasted Red Snapper',
@@ -98,18 +106,21 @@ function meat() {
     description: 'Succulent roast topside of beef, made especially irresistible with a mustard crust, piquant shallots and red wine enriched gravy',
     price: '40$',
   });
+
   items.push({
     image: 'meat2.jpg',
     name: 'Tenderloin Steak Diane',
     description: 'Excellent recipe for pan fried steak. The fresh mushroom sauce cooked in the same butter that the steaks were cooked in is delicious.',
     price: '40$',
   });
+
   items.push({
     image: 'meat3.jpg',
     name: 'Beef stroganoff',
     description: 'Classic beef stroganoff with steak and mushrooms for a tasty midweek meal. Garnish with parsley and serve with pappardelle pasta or rice',
     price: '40$',
   });
+
   items.push({
     image: 'meat4.jpg',
     name: 'Beef goulash',
