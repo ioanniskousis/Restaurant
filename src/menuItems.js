@@ -96,25 +96,25 @@ function meat() {
     image: 'meat1.jpg',
     name: 'Roast beef on bananas',
     description: 'Succulent roast topside of beef, made especially irresistible with a mustard crust, piquant shallots and red wine enriched gravy',
-    price: '30$',
+    price: '40$',
   });
   items.push({
     image: 'meat2.jpg',
     name: 'Tenderloin Steak Diane',
     description: 'Excellent recipe for pan fried steak. The fresh mushroom sauce cooked in the same butter that the steaks were cooked in is delicious.',
-    price: '30$',
+    price: '40$',
   });
   items.push({
-    image: '',
-    name: '',
-    description: '',
-    price: '30$',
+    image: 'meat3.jpg',
+    name: 'Beef stroganoff',
+    description: 'Classic beef stroganoff with steak and mushrooms for a tasty midweek meal. Garnish with parsley and serve with pappardelle pasta or rice',
+    price: '40$',
   });
   items.push({
-    image: '',
-    name: '',
-    description: '',
-    price: '30$',
+    image: 'meat4.jpg',
+    name: 'Beef goulash',
+    description: 'Beef goulash for chilly nights. Stir in the soured cream and parsley for an indulgent, crowd-pleasing supper',
+    price: '40$',
   });
 
   return items;
@@ -123,28 +123,28 @@ function meat() {
 function wine() {
   const items = [];
   items.push({
-    image: '',
-    name: '',
-    description: '',
-    price: '20$',
+    image: 'wine1.jpg',
+    name: 'Chateau Margaux Grand Cru 2004',
+    description: 'In 2004 he was born in conditions very similar to those of 1996: the same unstable summer weather, the same beautiful autumn, the same rainy harvest',
+    price: '700$',
   });
   items.push({
-    image: '',
-    name: '',
-    description: '',
-    price: '20$',
+    image: 'wine2.jpg',
+    name: 'Peplo Rose',
+    description: 'The color is bright and fine, the ultimate coral with highlights of red gold. The nose is dominated by red fruits, cherries and strawberries, a trace of citrus fruits, grapefruit lemon',
+    price: '300$',
   });
   items.push({
-    image: '',
-    name: '',
-    description: '',
-    price: '20$',
+    image: 'wine3.jpg',
+    name: 'Chardonnay Blank',
+    description: 'Bright yellowish-blonde with light green highlights. Intense and complex aroma of yellow fruits, citrus, wax and with gentle notes of tobacco and vanilla',
+    price: '400$',
   });
   items.push({
-    image: '',
-    name: '',
-    description: '',
-    price: '20$',
+    image: 'wine4.jpg',
+    name: 'Cote de Beaune 2017',
+    description: 'The definition of elegance in red wines, with a quality label from the Côte de Beaune of Burgundy. Beautiful "version" of Pinot Noir with fresh aromas of red fruits',
+    price: '600$',
   });
 
 
