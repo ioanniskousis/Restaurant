@@ -73,19 +73,19 @@ A restaurant's web page built with HTML5, CSS3 and JavaScript
 
 ## About The Project  
 
-  The project is implemented using an HTML page - the index.html. 
-  Webpack is used having configured as follows
+  The project is implemented using an HTML page - the index.html.  
+  Webpack is used having configured as follows  
     - entry  : /src/index.js  
     - output : dist/main.js  
-    - Images are compiled using file-loader
+    - Images are compiled using file-loader  
     - CSS is compiled using style-loader  
 
   The mark-up file dist/index.html only contains a skeleton that is rendered with elements depending on which view is selected by the user between 3.
-    - About Us, rendered by aboutUs.js
-    - Menu, rendered by menu.js fed with data from menuItems.js
+    - About Us, rendered by aboutUs.js  
+    - Menu, rendered by menu.js fed with data from menuItems.js  
     - Contact, rendered by contacts.js  
-  The page footer is rendered by the footer.js
-  The navigation division is rendered by navigator.js
+  The page footer is rendered by the footer.js  
+  The navigation division is rendered by navigator.js  
 
   The navigation buttons are supplied a pointer to a callback function (the navigatorCallBack function) from the index.js and this is called when a button is clicked providing the index of the button as a parameter.  
 
@@ -100,7 +100,7 @@ A restaurant's web page built with HTML5, CSS3 and JavaScript
 <hr/>
 
 ## System Requirements
-  - JavaScript Enabled
+  - JavaScript Enabled  
   - You need to Disable Cross-Origin-Restrictions from your browser if you want to open the index.html from your file system without using a server.  
 
 <hr/>
