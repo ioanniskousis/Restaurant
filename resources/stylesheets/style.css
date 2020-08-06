@@ -65,6 +65,7 @@ main {
 }
 
 .navigateSelector {
+  font-size: 3vh;
   width: 30%;
   height: 100%;
   margin: 0 0.2vw;
@@ -185,11 +186,11 @@ main {
 }
 
 .menuHeader {
-  margin: 10px 20px;
-  width: calc(100% - 40px);
-  height: 80px;
-  font-size: 32px;
-  padding: 10px 20px;
+  margin: 1vh 2vw;
+  width: calc(100% - 6vw);
+  height: 5vw;
+  font-size: 3vw;
+  padding: 1vh 2vw;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -292,15 +293,14 @@ footer > img {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
-  /* .content-navigator {
-    font-size: 18px;
-  }
+@media screen and (max-width: 768px) {
 
-  .menuItem {
-    margin: 10px 10px;
-    width: calc(100% - 20px);
-  } */
+  .menuHeader {
+    height: 7vw;
+    font-size: 5vw;
+    padding: 2vh 4vw;
+  }
+  
 
   .itemName {
     font-size: 18px;
