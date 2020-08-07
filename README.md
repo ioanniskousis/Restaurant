@@ -84,7 +84,8 @@ A restaurant's web page built with HTML5, CSS3 and JavaScript
     - About Us, rendered by aboutUs.js  
     - Menu, rendered by menu.js fed with data from menuItems.js  
     - Contact, rendered by contacts.js  
-  The page footer is rendered by the footer.js  
+
+  The page header, page footer, and the container divisions (main and mainContent) of the content are rendered by the skeleton.js 
   The navigation division is rendered by navigator.js  
 
   The navigation buttons are supplied a pointer to a callback function (the navigatorCallBack function) from the index.js and this is called when a button is clicked providing the index of the button as a parameter.  
