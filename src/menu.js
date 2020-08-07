@@ -20,7 +20,6 @@ function renderItem(content, item) {
 
   const itemImage = crel('div');
   itemImage.className = 'itemImage '.concat(item.image);
-  // itemImage.style.backgroundImage = 'url("../resources/images/'.concat(item.image).concat('")');
   menuItem.appendChild(itemImage);
 
   const itemText = crel('div');
