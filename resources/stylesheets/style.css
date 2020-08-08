@@ -1,0 +1,404 @@
+* {
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+* ::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-image: url('../images/sea-side.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  height: 6vh;
+  width: 100%;
+  background-color: rgb(32, 128, 180);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-caption {
+  color: white;
+  font-size: 4vh;
+}
+
+main {
+  margin: 0 auto;
+  height: calc(100vh - 10vh);
+  width: 90%;
+  border-left: 0.8vw solid rgb(32, 128, 180);
+  border-right: 0.8vw solid rgb(32, 128, 180);
+  position: relative;
+}
+
+#mainContent {
+  width: 100%;
+  height: 100%;
+}
+
+.content-navigator {
+  position: absolute;
+  top: 1.5vh;
+  left: 0;
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(32, 128, 180);
+  font-size: 3vh;
+}
+
+.navigateSelector {
+  font-size: 3vh;
+  width: 30%;
+  height: 100%;
+  margin: 0 0.2vw;
+  border-radius: 0.8vh 0.8vh 0 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all, 0.2s;
+  box-shadow: none;
+}
+
+.navigateSelector:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navigateSelector:active {
+  background-color: rgba(200, 200, 200, 0.2);
+}
+
+.selectedNavigator {
+  box-shadow: -2px -3px 2px 2px rgba(100, 100, 100, 0.1), 2px -3px 2px 2px rgba(100, 100, 100, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 1vh;
+}
+
+#content {
+  position: absolute;
+  top: 8vh;
+  left: 2%;
+  width: 96%;
+  height: calc(100% - 8.5vh);
+  background-color: rgba(255, 255, 255, 0.2);
+  overflow-y: scroll;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.5vw;
+  padding: 3vh 2vw;
+}
+
+.aboutItemCaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8vw;
+  background-color: rgba(100, 100, 100, 0.7);
+  color: white;
+  font-size: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutItem {
+  position: relative;
+  margin: 1vh 2vw;
+  width: calc(100% - 4vw);
+  height: 30vw;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  overflow: hidden;
+}
+
+.grabs {
+  background-image: url('../images/grabs.jpg');
+}
+
+.kitchen {
+  background-image: url('../images/kitchen.jpg');
+}
+
+.atmosphaire {
+  background-image: url('../images/atmosphaire.jpg');
+}
+
+.chef {
+  position: absolute;
+  box-shadow: 0 0 4px 4px rgba(255, 255, 255, 0.5);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
+}
+
+.chef1 {
+  width: 20vw;
+  height: 12vw;
+  left: 2vw;
+  top: 10vw;
+  background-image: url('../images/chef1.jpeg');
+}
+
+.chef2 {
+  width: 12vw;
+  height: 18vw;
+  left: 18vw;
+  top: 12vw;
+  background-image: url('../images/chef2.jpeg');
+}
+
+.chef3 {
+  width: 18vw;
+  height: 18vw;
+  left: 55vw;
+  top: 10vw;
+  background-image: url('../images/chef3.jpeg');
+}
+
+.chef4 {
+  width: 20vw;
+  height: 12vw;
+  left: 33vw;
+  top: 16vw;
+  background-image: url('../images/chef4.jpeg');
+}
+
+.menuHeader {
+  margin: 1vh 2vw;
+  width: calc(100% - 6vw);
+  height: 5vw;
+  font-size: 3vw;
+  padding: 1vh 2vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: brown;
+  text-shadow: 0 0 6px rgba(100, 50, 10, 1);
+}
+
+.menuItem {
+  margin: 10px 20px;
+  width: calc(100% - 40px);
+  height: 160px;
+  display: flex;
+}
+
+.itemImage {
+  width: 160px;
+  height: 160px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+
+.salad1 {
+  background-image: url('../images/salad1.jpg');
+}
+
+.salad2 {
+  background-image: url('../images/salad2.jpg');
+}
+
+.salad3 {
+  background-image: url('../images/salad3.jpg');
+}
+
+.salad4 {
+  background-image: url('../images/salad4.jpg');
+}
+
+.shellfish1 {
+  background-image: url('../images/shellfish1.jpg');
+}
+
+.shellfish2 {
+  background-image: url('../images/shellfish2.jpg');
+}
+
+.shellfish3 {
+  background-image: url('../images/shellfish3.jpg');
+}
+
+.shellfish4 {
+  background-image: url('../images/shellfish4.jpg');
+}
+
+.fish1 {
+  background-image: url('../images/fish1.png');
+}
+
+.fish2 {
+  background-image: url('../images/fish2.jpg');
+}
+
+.fish3 {
+  background-image: url('../images/fish3.jpg');
+}
+
+.fish4 {
+  background-image: url('../images/fish4.jpeg');
+}
+
+.meat1 {
+  background-image: url('../images/meat1.jpg');
+}
+
+.meat2 {
+  background-image: url('../images/meat2.jpg');
+}
+
+.meat3 {
+  background-image: url('../images/meat3.jpg');
+}
+
+.meat4 {
+  background-image: url('../images/meat4.jpg');
+}
+
+.wine1 {
+  background-image: url('../images/wine1.jpg');
+}
+
+.wine2 {
+  background-image: url('../images/wine2.jpg');
+}
+
+.wine3 {
+  background-image: url('../images/wine3.jpg');
+}
+
+.wine4 {
+  background-image: url('../images/wine4.jpg');
+}
+
+.itemText {
+  background-color: rgba(250, 250, 250, 0.8);
+  height: 100%;
+  margin-left: 10px;
+  width: calc(100% - 170px);
+  display: flex;
+  flex-direction: column;
+}
+
+.itemName {
+  background-color: rgba(250, 250, 250, 0.8);
+  color: brown;
+  text-shadow: 0 0 6px rgba(100, 50, 10, 1);
+  font-size: 22px;
+  padding: 6px 20px;
+  height: 40px;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.itemDescription {
+  padding: 6px 6vw;
+  height: calc(100% - 70px);
+  overflow: scroll;
+  border-bottom: 1px solid #ddd;
+  color: rgb(10, 40, 120);
+}
+
+.itemPrice {
+  font-size: 18px;
+  height: 30px;
+  padding: 6px;
+  text-align: right;
+  color: brown;
+}
+
+.contactItem {
+  background-color: rgba(255, 225550, 255, 0.7);
+  margin: 10px 20px;
+  width: calc(100% - 40px);
+  height: 500px;
+  border-radius: 2px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.contactItem > h1 {
+  margin: 30px;
+  padding: 10px;
+  color: brown;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 1);
+}
+
+.mapItem {
+  background-image: url('../images/map.png');
+}
+
+footer {
+  height: 4vh;
+  background-color: rgb(32, 128, 180);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: x-small;
+  white-space: nowrap;
+}
+
+footer > img {
+  width: 2vh;
+  height: 2vh;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .menuHeader {
+    height: 7vw;
+    font-size: 5vw;
+    padding: 2vh 4vw;
+  }
+
+  .itemName {
+    font-size: 18px;
+    padding: 6px 10px;
+    height: 30px;
+  }
+
+  .itemDescription {
+    height: calc(100% - 50px);
+    padding: 4px 2vw;
+  }
+
+  .itemPrice {
+    padding: 0 6px;
+    font-size: 16px;
+    height: 20px;
+  }
+
+  .contactItem > h1 {
+    margin: 15px 30px;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .menuHeader {
+    font-size: 4vw;
+  }
+}
